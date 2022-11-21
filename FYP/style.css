@@ -1,0 +1,415 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 70vh;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    background: linear-gradient(270deg, #7a7a7a 0%, #c4c4c4 35%, #FFFFFF 100%);
+}
+/*                                                          welcome */
+.welcome_body{
+    margin: 100px 0px 0px 100px;
+    height: 70vh;
+    min-height: fit-content;
+}
+.welcome{
+    height: fit-content;
+    width: fit-content;
+    display: inline-flex;
+    font-size: 60px;
+    margin: 0px;
+}
+.welcome-buttons{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px 150px 0px 350px;
+}
+/* .welcome-buttons span{
+    margin: 20px 0px 40px 0px;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+} */
+.welcome-buttons span{
+    margin: 10px 0px 80px 30px;
+    box-shadow: 0px 0px 500px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    perspective: 1000px;
+}
+.welcome-buttons span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+.dlogin a:before,
+.dlogin a:after{
+    position: absolute;
+    content: "Login";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.loginbuttons{
+    display: inline-flex;
+    margin-left: 200px;
+}
+.popup{
+    width: 100vw;
+    color: #ff0000;
+    margin-left: 200px;
+    margin-top: -40px;
+}
+input[type=submit], input[type=reset]{
+    border: none;
+    font-size: 20px;
+    width: 180px;
+    margin: 0px 40px 0px 0px;
+    padding: 10px;
+    color: #d4d4d4;
+    background: #000000;
+}
+
+.ologin a:before,
+.ologin a:after{
+    position: absolute;
+    content: "Login";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.oregister a:before,
+.oregister a:after{
+    position: absolute;
+    content: "Register";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.welcome-buttons span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+.welcome-buttons span a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+}
+.welcome-buttons span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+/*                                                          footer */
+
+footer{
+    /* position: fixed; */
+    /* position: sticky; */
+    /* position: absolute; */
+    position: relative;
+    /* width: 100%; */
+    height: 13vh;
+    bottom: 5px;
+    margin: 0px -8px -8px -8px;
+    padding-bottom: 10px;
+    background: #c4c4c4;
+}
+
+/*                                                          o/d login and o register*/
+.dlogin_page ,
+.ologin_page ,
+.oregister_page{
+    margin: 100px 0px 0px 100px;
+    height: 70vh;
+    min-height: fit-content;
+}
+.login_fields{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 100px;
+}
+.login_fields input[type=text],.login_fields input[type=password]{
+    font-size: 30px;
+    width: 500px;
+    margin: 0px 0px 40px 200px;
+    border: none;
+}
+.oregister_page .login_fields, 
+.ologin_page .login_fields{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 100px;
+}
+.oregister_page .login_fields input[type=text], 
+.ologin_page .login_fields input[type=text],
+.oregister_page .login_fields input[type=password], 
+.ologin_page .login_fields input[type=password]{
+    font-size: 30px;
+    width: 500px;
+    margin: 0px 0px 20px 200px;
+    border: none;
+}
+/* .login_fields .welcome-buttons span{
+    margin: 0px 0px 0px 0px;
+} */
+
+
+/*                                                          d infractions*/
+.header{
+    display: inline-flex;
+    width: 100%;
+    background-color: #ffffff;
+    margin: -10px -10px 0px -10px;
+    padding: 10px 10px 10px 10px;
+}
+.header_container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0px 500px 0px 100px;
+    align-items: center;
+}
+.header_container div{
+    font-size: 22px;
+}
+.header img{
+    height: 80px;
+    margin: 10px 0px 0px 20px;
+}
+.nav{
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #c4c4c4;
+    width: 100vw;
+    margin: 0px 0px 0px -10px;
+}
+.nav .nlinks{
+    font-size: 20px;
+    margin: 10px 50px 10px 30px;
+}
+.nav .nlinks a{
+    text-decoration: none;
+    color: #000000;
+}
+.nav .left{
+    display: inline-flex;
+}
+.nav .right{
+    display: inline-flex;
+}
+.nactive{
+    background-color: #d4d4d4;
+    padding: 10px 85px 10px 90px;
+    margin: 0px !important;
+}
+.container{
+    display: inline-flex;
+    width: 100vw;
+    margin: 0px 0px 0px -8px;
+}
+.side_nav{
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow-y: scroll;
+    background-color: #c4c4c4;
+    width: 20vw;
+    padding-bottom: 1vh;
+}
+.osearch_page .side_nav{
+    min-height: 50vh;
+    max-height: 50vh;
+    overflow-y: scroll;
+    background-color: #c4c4c4;
+    width: 30vw;
+    padding-bottom: 1vh;
+}
+.side_nav .slinks{
+    font-size: 18px;
+    padding: 10px 0px 10px 20px;
+}
+.side_nav .slinks a{
+    text-decoration: none;
+    color: #000000;
+}
+.ssearch{
+    font-size: 18px;
+    padding: 10px 0px 10px 20px;
+}
+.ssearch input[type=text]{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+}
+.sactive{
+    background-color: #d4d4d4;
+}
+.button .print{
+    border: none;
+    font-size: 18px;
+    width: 180px;
+    margin: 220px 20px 0px 40px;
+    padding: 10px;
+    color: #d4d4d4;
+    background: #000000;
+}
+.button .oprint{
+    border: none;
+    font-size: 18px;
+    width: 180px;
+    margin: 180px 20px 0px 40px;
+    padding: 10px;
+    color: #d4d4d4;
+    background: #000000;
+}
+.button .osearch{
+    border: none;
+    font-size: 18px;
+    width: 180px;
+    margin: 0px 40px 0px 0px;
+    padding: 10px;
+    color: #d4d4d4;
+    background: #000000;
+}
+.content{
+    height: 60vh;
+    min-height: 60vh;
+    background-color: #ffffff;
+    width: 80vw;
+    overflow-y: scroll;
+    padding-bottom: 1vh;
+}
+.record{
+    background-color: #d4d4d4;
+    margin: 10px;
+    padding: 10px 10px 10px 10px;
+}
+.recordl{
+    padding: 10px 0px 10px 30px;
+    width: 70vw;
+    display: inline-flex;
+    justify-content: space-between;
+}
+/*                                                          d pay,search,report*/
+.dpay_page .container .content{
+    height: 60vh;
+    min-height: 60vh;
+    background-color: #ffffff;
+    width: 100vw;
+    overflow-y: scroll;
+    padding-bottom: 1vh;
+}
+.topbar{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #d4d4d4;
+}
+.osearch_page .topbar{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    margin: 0px 0px 0px -10px;
+    background: #d4d4d4;
+}
+.osearch_page .topbar form{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    background: #d4d4d4;
+}
+.topbar .buttons{
+    display: inline-flex;
+}
+.dpay_page .button .print{
+    border: none;
+    font-size: 18px;
+    width: 180px;
+    margin: 0px 40px 0px 0px;
+    padding: 10px;
+    color: #d4d4d4;
+    background: #000000;
+}
+.report{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 80vw;
+}
+.rimage img{
+    height: 200px;
+    width: 500px;
+    max-height: 200px;
+    max-width: 500px;
+}
+#thankyouPayment{
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: 300px;
+    height: 100px;
+    width: 175px;
+    padding: 50px;
+    background-color: #1E1515;
+    border-radius: 20px;
+    color: white;
+}
+
+.side_nav form input[type=submit], .emails form input[type=submit]{
+    font-size: 10px;
+    width: 80px;
+    padding: 5px;
+}
+.side_nav form{
+    padding: 5px 5px 5px 10px;
+}
+.emails .title{
+    padding: 10px 5px 0px 10px;
+}
+
+.osearch_page .container .content{
+    height: 50vh;
+    min-height: 50vh;
+    background-color: #ffffff;
+    width: 100vw;
+    overflow-y: scroll;
+    padding-bottom: 1vh;
+}
+.amount{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 40vw;
+}
+.amount .button{
+    margin-top: -25px;
+}
+.button .pay{
+    border: none;
+    font-size: 18px;
+    width: 180px;
+    padding: 10px;
+    color: #d4d4d4;
+    background: #000000;
+}
+.right .record{
+    width: 20vw;
+}
